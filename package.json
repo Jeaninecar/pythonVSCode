@@ -316,15 +316,7 @@
                             "name": "Python: Current File",
                             "type": "python",
                             "request": "launch",
-                            "stopOnEntry": true,
-                            "pythonPath": "^\"\\${config:python.pythonPath}\"",
-                            "program": "^\"\\${file}\"",
-                            "cwd": "^\"\\${workspaceFolder}\"",
-                            "env": {},
-                            "envFile": "^\"\\${workspaceFolder}/.env\"",
-                            "debugOptions": [
-                                "RedirectOutput"
-                            ]
+                            "program": "^\"\\${file}\""
                         }
                     },
                     {
@@ -334,7 +326,6 @@
                             "name": "PySpark",
                             "type": "python",
                             "request": "launch",
-                            "stopOnEntry": true,
                             "osx": {
                                 "pythonPath": "^\"\\${env:SPARK_HOME}/bin/spark-submit\""
                             },
@@ -344,13 +335,7 @@
                             "linux": {
                                 "pythonPath": "^\"\\${env:SPARK_HOME}/bin/spark-submit\""
                             },
-                            "program": "^\"\\${file}\"",
-                            "cwd": "^\"\\${workspaceFolder}\"",
-                            "env": {},
-                            "envFile": "^\"\\${workspaceFolder}/.env\"",
-                            "debugOptions": [
-                                "RedirectOutput"
-                            ]
+                            "program": "^\"\\${file}\""
                         }
                     },
                     {
@@ -360,15 +345,7 @@
                             "name": "Python Module",
                             "type": "python",
                             "request": "launch",
-                            "stopOnEntry": true,
-                            "pythonPath": "^\"\\${config:python.pythonPath}\"",
-                            "module": "module.name",
-                            "cwd": "^\"\\${workspaceFolder}\"",
-                            "env": {},
-                            "envFile": "^\"\\${workspaceFolder}/.env\"",
-                            "debugOptions": [
-                                "RedirectOutput"
-                            ]
+                            "module": "module.name"
                         }
                     },
                     {
@@ -378,15 +355,8 @@
                             "name": "Integrated Terminal/Console",
                             "type": "python",
                             "request": "launch",
-                            "stopOnEntry": true,
-                            "pythonPath": "^\"\\${config:python.pythonPath}\"",
                             "program": "^\"\\${file}\"",
-                            "cwd": "",
-                            "console": "integratedTerminal",
-                            "env": {},
-                            "envFile": "^\"\\${workspaceFolder}/.env\"",
-                            "debugOptions": [],
-                            "internalConsoleOptions": "neverOpen"
+                            "console": "integratedTerminal"
                         }
                     },
                     {
@@ -396,15 +366,8 @@
                             "name": "External Terminal/Console",
                             "type": "python",
                             "request": "launch",
-                            "stopOnEntry": true,
-                            "pythonPath": "^\"\\${config:python.pythonPath}\"",
                             "program": "^\"\\${file}\"",
-                            "cwd": "",
-                            "console": "externalTerminal",
-                            "env": {},
-                            "envFile": "^\"\\${workspaceFolder}/.env\"",
-                            "debugOptions": [],
-                            "internalConsoleOptions": "neverOpen"
+                            "console": "externalTerminal"
                         }
                     },
                     {
@@ -414,17 +377,12 @@
                             "name": "Django",
                             "type": "python",
                             "request": "launch",
-                            "stopOnEntry": true,
-                            "pythonPath": "^\"\\${config:python.pythonPath}\"",
                             "program": "^\"\\${workspaceFolder}/manage.py\"",
-                            "cwd": "^\"\\${workspaceFolder}\"",
                             "args": [
                                 "runserver",
                                 "--noreload",
                                 "--nothreading"
                             ],
-                            "env": {},
-                            "envFile": "^\"\\${workspaceFolder}/.env\"",
                             "debugOptions": [
                                 "RedirectOutput",
                                 "DjangoDebugging"
@@ -438,10 +396,7 @@
                             "name": "Flask",
                             "type": "python",
                             "request": "launch",
-                            "stopOnEntry": false,
-                            "pythonPath": "^\"\\${config:python.pythonPath}\"",
                             "program": "fully qualified path fo 'flask' executable. Generally located along with python interpreter",
-                            "cwd": "^\"\\${workspaceFolder}\"",
                             "env": {
                                 "FLASK_APP": "^\"\\${workspaceFolder}/quickstart/app.py\""
                             },
@@ -449,10 +404,6 @@
                                 "run",
                                 "--no-debugger",
                                 "--no-reload"
-                            ],
-                            "envFile": "^\"\\${workspaceFolder}/.env\"",
-                            "debugOptions": [
-                                "RedirectOutput"
                             ]
                         }
                     },
@@ -463,16 +414,7 @@
                             "name": "Flask (old)",
                             "type": "python",
                             "request": "launch",
-                            "stopOnEntry": false,
-                            "pythonPath": "^\"\\${config:python.pythonPath}\"",
-                            "program": "^\"\\${workspaceFolder}/run.py\"",
-                            "cwd": "^\"\\${workspaceFolder}\"",
-                            "args": [],
-                            "env": {},
-                            "envFile": "^\"\\${workspaceFolder}/.env\"",
-                            "debugOptions": [
-                                "RedirectOutput"
-                            ]
+                            "program": "^\"\\${workspaceFolder}/run.py\""
                         }
                     },
                     {
@@ -482,11 +424,6 @@
                             "name": "Pyramid",
                             "type": "python",
                             "request": "launch",
-                            "stopOnEntry": true,
-                            "pythonPath": "^\"\\${config:python.pythonPath}\"",
-                            "cwd": "^\"\\${workspaceFolder}\"",
-                            "env": {},
-                            "envFile": "^\"\\${workspaceFolder}/.env\"",
                             "args": [
                                 "^\"\\${workspaceFolder}/development.ini\""
                             ],
@@ -503,19 +440,11 @@
                             "name": "Watson",
                             "type": "python",
                             "request": "launch",
-                            "stopOnEntry": true,
-                            "pythonPath": "^\"\\${config:python.pythonPath}\"",
                             "program": "^\"\\${workspaceFolder}/console.py\"",
-                            "cwd": "^\"\\${workspaceFolder}\"",
                             "args": [
                                 "dev",
                                 "runserver",
                                 "--noreload=True"
-                            ],
-                            "env": {},
-                            "envFile": "^\"\\${workspaceFolder}/.env\"",
-                            "debugOptions": [
-                                "RedirectOutput"
                             ]
                         }
                     },
@@ -526,20 +455,14 @@
                             "name": "Scrapy",
                             "type": "python",
                             "request": "launch",
-                            "stopOnEntry": true,
-                            "pythonPath": "^\"\\${config:python.pythonPath}\"",
                             "program": "~/.virtualenvs/scrapy/bin/scrapy",
-                            "cwd": "^\"\\${workspaceFolder}\"",
                             "args": [
                                 "crawl",
                                 "specs",
                                 "-o",
                                 "bikes.json"
                             ],
-                            "console": "integratedTerminal",
-                            "env": {},
-                            "envFile": "^\"\\${workspaceFolder}/.env\"",
-                            "debugOptions": []
+                            "console": "integratedTerminal"
                         }
                     },
                     {
@@ -586,7 +509,7 @@
                             "stopOnEntry": {
                                 "type": "boolean",
                                 "description": "Automatically stop after launch.",
-                                "default": true
+                                "default": false
                             },
                             "console": {
                                 "enum": [
@@ -600,7 +523,7 @@
                             "cwd": {
                                 "type": "string",
                                 "description": "Absolute path to the working directory of the program being debugged. Default is the root directory of the file (leave empty).",
-                                "default": ""
+                                "default": "${workspaceFolder}"
                             },
                             "debugOptions": {
                                 "type": "array",
@@ -658,7 +581,7 @@
                             "envFile": {
                                 "type": "string",
                                 "description": "Absolute path to a file containing environment variable definitions.",
-                                "default": ""
+                                "default": "${workspaceFolder}/.env"
                             },
                             "port": {
                                 "type": "number",
@@ -711,15 +634,7 @@
                         "name": "Python: Current File",
                         "type": "python",
                         "request": "launch",
-                        "stopOnEntry": true,
-                        "pythonPath": "${config:python.pythonPath}",
-                        "program": "${file}",
-                        "cwd": "${workspaceFolder}",
-                        "env": {},
-                        "envFile": "${workspaceFolder}/.env",
-                        "debugOptions": [
-                            "RedirectOutput"
-                        ]
+                        "program": "${file}"
                     },
                     {
                         "name": "Python: Attach",
@@ -735,45 +650,26 @@
                         "name": "Python: Terminal (integrated)",
                         "type": "python",
                         "request": "launch",
-                        "stopOnEntry": true,
-                        "pythonPath": "${config:python.pythonPath}",
                         "program": "${file}",
-                        "cwd": "",
-                        "console": "integratedTerminal",
-                        "env": {},
-                        "envFile": "${workspaceFolder}/.env",
-                        "debugOptions": [],
-                        "internalConsoleOptions": "neverOpen"
+                        "console": "integratedTerminal"
                     },
                     {
                         "name": "Python: Terminal (external)",
                         "type": "python",
                         "request": "launch",
-                        "stopOnEntry": true,
-                        "pythonPath": "${config:python.pythonPath}",
                         "program": "${file}",
-                        "cwd": "",
-                        "console": "externalTerminal",
-                        "env": {},
-                        "envFile": "${workspaceFolder}/.env",
-                        "debugOptions": [],
-                        "internalConsoleOptions": "neverOpen"
+                        "console": "externalTerminal"
                     },
                     {
                         "name": "Python: Django",
                         "type": "python",
                         "request": "launch",
-                        "stopOnEntry": true,
-                        "pythonPath": "${config:python.pythonPath}",
                         "program": "${workspaceFolder}/manage.py",
-                        "cwd": "${workspaceFolder}",
                         "args": [
                             "runserver",
                             "--noreload",
                             "--nothreading"
                         ],
-                        "env": {},
-                        "envFile": "${workspaceFolder}/.env",
                         "debugOptions": [
                             "RedirectOutput",
                             "DjangoDebugging"
@@ -783,10 +679,7 @@
                         "name": "Python: Flask (0.11.x or later)",
                         "type": "python",
                         "request": "launch",
-                        "stopOnEntry": false,
-                        "pythonPath": "${config:python.pythonPath}",
                         "program": "fully qualified path fo 'flask' executable. Generally located along with python interpreter",
-                        "cwd": "${workspaceFolder}",
                         "env": {
                             "FLASK_APP": "${workspaceFolder}/quickstart/app.py"
                         },
@@ -794,32 +687,18 @@
                             "run",
                             "--no-debugger",
                             "--no-reload"
-                        ],
-                        "envFile": "${workspaceFolder}/.env",
-                        "debugOptions": [
-                            "RedirectOutput"
                         ]
                     },
                     {
                         "name": "Python: Flask (0.10.x or earlier)",
                         "type": "python",
                         "request": "launch",
-                        "stopOnEntry": false,
-                        "pythonPath": "${config:python.pythonPath}",
-                        "program": "${workspaceFolder}/run.py",
-                        "cwd": "${workspaceFolder}",
-                        "args": [],
-                        "env": {},
-                        "envFile": "${workspaceFolder}/.env",
-                        "debugOptions": [
-                            "RedirectOutput"
-                        ]
+                        "program": "${workspaceFolder}/run.py"
                     },
                     {
                         "name": "Python: PySpark",
                         "type": "python",
                         "request": "launch",
-                        "stopOnEntry": true,
                         "osx": {
                             "pythonPath": "${env:SPARK_HOME}/bin/spark-submit"
                         },
@@ -829,37 +708,18 @@
                         "linux": {
                             "pythonPath": "${env:SPARK_HOME}/bin/spark-submit"
                         },
-                        "program": "${file}",
-                        "cwd": "${workspaceFolder}",
-                        "env": {},
-                        "envFile": "${workspaceFolder}/.env",
-                        "debugOptions": [
-                            "RedirectOutput"
-                        ]
+                        "program": "${file}"
                     },
                     {
                         "name": "Python: Module",
                         "type": "python",
                         "request": "launch",
-                        "stopOnEntry": true,
-                        "pythonPath": "${config:python.pythonPath}",
-                        "module": "module.name",
-                        "cwd": "${workspaceFolder}",
-                        "env": {},
-                        "envFile": "${workspaceFolder}/.env",
-                        "debugOptions": [
-                            "RedirectOutput"
-                        ]
+                        "module": "module.name"
                     },
                     {
                         "name": "Python: Pyramid",
                         "type": "python",
                         "request": "launch",
-                        "stopOnEntry": true,
-                        "pythonPath": "${config:python.pythonPath}",
-                        "cwd": "${workspaceFolder}",
-                        "env": {},
-                        "envFile": "${workspaceFolder}/.env",
                         "args": [
                             "${workspaceFolder}/development.ini"
                         ],
@@ -872,19 +732,11 @@
                         "name": "Python: Watson",
                         "type": "python",
                         "request": "launch",
-                        "stopOnEntry": true,
-                        "pythonPath": "${config:python.pythonPath}",
                         "program": "${workspaceFolder}/console.py",
-                        "cwd": "${workspaceFolder}",
                         "args": [
                             "dev",
                             "runserver",
                             "--noreload=True"
-                        ],
-                        "env": {},
-                        "envFile": "${workspaceFolder}/.env",
-                        "debugOptions": [
-                            "RedirectOutput"
                         ]
                     }
                 ]
@@ -912,15 +764,8 @@
                             "name": "Integrated Terminal/Console",
                             "type": "pythonExperimental",
                             "request": "launch",
-                            "stopOnEntry": true,
-                            "pythonPath": "^\"\\${config:python.pythonPath}\"",
                             "program": "^\"\\${file}\"",
-                            "cwd": "",
-                            "console": "integratedTerminal",
-                            "env": {},
-                            "envFile": "^\"\\${workspaceFolder}/.env\"",
-                            "debugOptions": [],
-                            "internalConsoleOptions": "neverOpen"
+                            "console": "integratedTerminal"
                         }
                     },
                     {
@@ -930,15 +775,8 @@
                             "name": "External Terminal/Console",
                             "type": "pythonExperimental",
                             "request": "launch",
-                            "stopOnEntry": true,
-                            "pythonPath": "^\"\\${config:python.pythonPath}\"",
                             "program": "^\"\\${file}\"",
-                            "cwd": "",
-                            "console": "externalTerminal",
-                            "env": {},
-                            "envFile": "^\"\\${workspaceFolder}/.env\"",
-                            "debugOptions": [],
-                            "internalConsoleOptions": "neverOpen"
+                            "console": "externalTerminal"
                         }
                     }
                 ],
@@ -984,7 +822,7 @@
                             "cwd": {
                                 "type": "string",
                                 "description": "Absolute path to the working directory of the program being debugged. Default is the root directory of the file (leave empty).",
-                                "default": ""
+                                "default": "${workspaceFolder}"
                             },
                             "debugOptions": {
                                 "type": "array",
@@ -1025,27 +863,15 @@
                         "name": "Python Experimental: Current File (Integrated Terminal)",
                         "type": "pythonExperimental",
                         "request": "launch",
-                        "pythonPath": "${config:python.pythonPath}",
                         "program": "${file}",
-                        "cwd": "",
-                        "console": "integratedTerminal",
-                        "env": {},
-                        "envFile": "${workspaceFolder}/.env",
-                        "debugOptions": [],
-                        "internalConsoleOptions": "neverOpen"
+                        "console": "integratedTerminal"
                     },
                     {
                         "name": "Python Experimental: Current File (External Terminal)",
                         "type": "pythonExperimental",
                         "request": "launch",
-                        "pythonPath": "${config:python.pythonPath}",
                         "program": "${file}",
-                        "cwd": "",
-                        "console": "externalTerminal",
-                        "env": {},
-                        "envFile": "${workspaceFolder}/.env",
-                        "debugOptions": [],
-                        "internalConsoleOptions": "neverOpen"
+                        "console": "externalTerminal"
                     }
                 ]
             }
